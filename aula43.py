@@ -15,10 +15,10 @@ while i < len(frase):
         i += 1
         continue
 
-    qtd_apareceu_mais_vezes_atual = frase.count(letra_atual)
+    qtd_atual = frase.count(letra_atual)
 
-    if qtd_aparaceu_mais_vezes < qtd_apareceu_mais_vezes_atual:
-        qtd_aparaceu_mais_vezes = qtd_apareceu_mais_vezes_atual
+    if qtd_aparaceu_mais_vezes < qtd_atual:
+        qtd_aparaceu_mais_vezes = qtd_atual
         letra_apareceu_mais_vezes = letra_atual
         
    
