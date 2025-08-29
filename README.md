@@ -1,4 +1,4 @@
-# Anotações e Projetos - Python 3+
+# Anotações e Projetos - Python 3+ 🐍
 
 Este é um registro das minhas anotações e códigos durante o curso de Python 3+ na Udemy, focado em aprimorar minhas habilidades em diversas áreas.
 
