@@ -1,4 +1,4 @@
-# Anotações e Projetos - Python 3+
+# Anotações e Projetos - Python 3+ 🐍
 
 ![Logo do Python]("assets/python_logo.png")
 
