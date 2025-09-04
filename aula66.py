@@ -24,9 +24,23 @@ contrário disso:
 O primeiro dígito do CPF é 7
 """
 #Contagem regressiva do primeiro dígito
-cpf = '746824890-70'
 
-nove_primeiro_digitos = cpf[:9]
+import sys
+
+cpf_enviado_usuario = '746.824.890-70'\
+    .replace('.','') \
+    .replace('-','') \
+    .replace(' ','') 
+
+
+cpf_enviado_usuario_e_sequencial = cpf_enviado_usuario == cpf_enviado_usuario[0] * len(cpf_enviado_usuario)
+
+if cpf_enviado_usuario_e_sequencial:
+    print('Você enviou dados sequenciais.')
+    sys.exit()
+
+
+nove_primeiro_digitos = cpf_enviado_usuario[:9]
 
 contador_regressivo = 10
 
@@ -41,8 +55,36 @@ segundo_resultado = resultado * 10
 terceiro_resultado = segundo_resultado % 11
 
 
-avaliador = print(terceiro_resultado if terceiro_resultado <=9 else 0)
+avaliador = (terceiro_resultado if terceiro_resultado <=9 else 0)
 
+
+# segundo digíto do cpf
+
+novo_digito = cpf_enviado_usuario[:10]
+contador_regressivo_2 = 11
+resultado_2 = 0
+
+for digito in novo_digito:
+    resultado_2 += int(digito) * contador_regressivo_2
+    contador_regressivo_2 -= 1
+print(resultado_2)
+
+resultado_2 = resultado_2 * 10
+resultado_2 = resultado_2 % 11
+
+0 if resultado_2 > 9 else resultado_2
+print(resultado_2)
+
+
+cpf_gerado_pelo_calculo = f'{nove_primeiro_digitos}{avaliador}{resultado_2}'
+
+print(cpf_gerado_pelo_calculo)
+
+
+if cpf_enviado_usuario == cpf_gerado_pelo_calculo:
+    print('CPF válido')
+else: 
+    print('CPF inválido')
 
 
 
