@@ -15,3 +15,5 @@ Este é um registro das minhas anotações e códigos durante o curso de Python 
 -   **Algoritmos:** Estruturas de dados e resolução de problemas.
 
 Espero que este material seja útil para mim e para qualquer pessoa que também esteja estudando esses tópicos.
+
+![GIF](assets/Gemini_Generated_Image_6xxpd86xxpd86xxp.png)
