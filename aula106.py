@@ -1,4 +1,4 @@
-# Try , except, else e finally
+# Try , except e tratar exceções
 
 string = 'Esdras' # str
 
