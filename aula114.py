@@ -24,7 +24,7 @@ for produto in produtos:
     
    nome = produto['nome']
    preco = produto['preco']
-   novo_preco = preco * 1.10
+   novo_preco = round(preco * 1.10 , 2)
 
    novo_produto = {'nome':nome, 'preco':novo_preco}
 
